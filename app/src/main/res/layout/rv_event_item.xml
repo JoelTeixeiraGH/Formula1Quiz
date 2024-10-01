@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="2dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginBottom="10dp"
+    android:padding="7dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@drawable/dialog_rounded_bg"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/rv_event_name"
+                android:fontFamily="@font/formulaonebold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/rv_event_date"
+                android:fontFamily="@font/formulaoneregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/rv_event_answered_questions_count"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:fontFamily="@font/formulaoneblack"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/rv_event_answered_questions_text"
+                android:layout_width="wrap_content"
+                android:textSize="10dp"
+                android:fontFamily="@font/formulaoneregular"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

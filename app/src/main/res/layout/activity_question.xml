@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.QuestionActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/question_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/formulaonebold"
+        android:text="00:00"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+    <TextView
+        android:id="@+id/question_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/formulaoneregular"
+        android:text="textQuestion"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="60dp"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/choice_A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundback"
+        android:fontFamily="@font/formulaoneregular"
+        android:text="Choice A"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/choice_B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundback"
+        android:fontFamily="@font/formulaoneregular"
+        android:text="Choice B"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/choice_C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundback"
+        android:fontFamily="@font/formulaoneregular"
+        android:text="Choice C"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null" />
+
+
+    <LinearLayout
+        android:id="@+id/btnQRCode"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_share_24"
+            android:backgroundTint="#000000"
+            app:backgroundTint="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="12dp"
+            android:text="@string/share_question"
+            android:fontFamily="@font/formulaoneregular"/>
+    </LinearLayout>
+
+</LinearLayout>

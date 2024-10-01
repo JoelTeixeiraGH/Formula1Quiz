@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@drawable/nav_fragment_bg"
+    tools:context=".fragments.leaderboard.LeaderboardFragment">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:text="@string/leaderboard_ranking_title"
+            android:fontFamily="@font/formulaonebold"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/leaderboard_username_title"
+            android:fontFamily="@font/formulaonebold"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/leaderboard_score_title"
+            android:fontFamily="@font/formulaonebold"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/rv_leaderboard"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+</LinearLayout>

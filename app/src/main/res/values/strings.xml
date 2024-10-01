@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Formula1Q</string>
+
+    <string name="login_title">Welcome</string>
+    <string name="login_subtitle">Let\'s sign you in</string>
+    <string name="login_text">Sign in with Google</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="clientId">913807954205-cuvmqdk54n0vqhkp8tcv8aq4pfv844g6.apps.googleusercontent.com</string>
+
+    <string name="navbar_home">Home</string>
+    <string name="navbar_leaderboard">Leaderboard</string>
+    <string name="navbar_camera">Camera</string>
+
+    <string name="home_title">Past Events</string>
+    <string name="text_random_question">Random Question</string>
+
+    <string name="leaderboard_ranking_title">Ranking</string>
+    <string name="leaderboard_username_title">Username</string>
+    <string name="leaderboard_score_title">Score</string>
+    <string name="rv_event_answered_questions_text">Questions</string>
+    <string name="share_question">SHARE QUESTION</string>
+    <string name="empty_list">NO PAST EVENTS YET</string>
+    <string name="navbar_more">More</string>
+    <string name="extras_add_calendar">Add races to calendar</string>
+    <string name="extras_remove_calendar">Remove races from calendar</string>
+    <string name="location_permission_rationale">To receive challenges when you\'re near a circuit
+        while Formula1Q is the background, you need you to go to:</string>
+    <string name="location_permission_rationale_perms_path"> Permissions > Location > \'Allow all the time\'</string>
+    <string name="text_open_permissions">GO TO SETTINGS</string>
+</resources>

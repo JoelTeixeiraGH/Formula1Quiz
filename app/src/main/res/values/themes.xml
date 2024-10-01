@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">#FBFEFF</item>
+    </style>
+
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Theme.F1Q" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#E80000</item>
+        <item name="colorPrimaryVariant">#CC0000</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

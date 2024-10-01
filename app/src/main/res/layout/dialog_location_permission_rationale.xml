@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#00FFFFFF"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:background="@drawable/dialog_rounded_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textSize="15dp"
+            android:lineSpacingExtra="8dp"
+            android:text="@string/location_permission_rationale"
+            android:fontFamily="@font/formulaoneregular" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:text="@string/location_permission_rationale_perms_path"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/formulaoneregular" />
+        <Button
+            android:id="@+id/action_open_permissions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/formulaoneregular"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:text="@string/text_open_permissions" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/action_dismiss_permission_rationale_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_close_btn"/>
+
+</RelativeLayout>

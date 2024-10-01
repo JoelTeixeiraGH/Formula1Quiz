@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pt.ipp.estg.formula1q">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.F1Q"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.CameraActivity">
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:noHistory="true" >
+        </activity>
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.QuestionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:noHistory="true" />
+
+        <service android:name=".utils.LocationService" />
+        <service android:name=".utils.RaceService" />
+    </application>
+
+</manifest>
